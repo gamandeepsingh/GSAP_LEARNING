@@ -1,0 +1,139 @@
+ * {
+     Margin: 0;
+     Padding: 0;
+     Box-sizing: border-box;
+     color: aliceblue;
+ }
+
+ *::selection {
+     background-color: white;
+     color: black;
+ }
+
+ html,
+ body {
+     Width: 100%;
+     Height: 100%;
+     overflow-x: hidden;
+ }
+
+ .main {
+     height: 100%;
+     width: 100%;
+     background-color: black;
+     font-family: sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+ }
+
+ nav {
+     width: 90%;
+     height: 80px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .nav-logo {
+     height: 60px;
+ }
+
+ nav ul {
+     display: flex;
+     gap: 30px;
+     list-style: none;
+     font-size: 20px;
+ }
+
+ nav ul li {
+     cursor: pointer;
+     padding: 10px 20px;
+     border-radius: 10px;
+     transition: all .5s;
+
+ }
+
+ nav ul li:hover {
+     background-color: rgba(255, 255, 255, 0.24);
+     backdrop-filter: blur(10px);
+     color: black;
+ }
+
+ .nav-btn {
+     display: flex;
+     gap: 20px;
+
+ }
+
+ .nav-btn button {
+     font-size: 20px;
+     background-color: transparent;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 10px;
+     transition: all .5s;
+     font-weight: bolder;
+ }
+
+ .nav-btn button:hover {
+     color: black;
+     background-color: rgba(255, 255, 255, 0.24);
+     backdrop-filter: blur(10px);
+ }
+
+ .main h1 {
+     font-size: 140px;
+     text-transform: uppercase;
+     display: flex;
+     align-items: center;
+     /* line-height: 160px; */
+     z-index: 3;
+ }
+
+ .main h1 span {
+     background-color: brown;
+     font-size: 40px;
+
+     color: black;
+     padding: 20px 40px;
+     border-radius: 50px;
+     margin: 10px 40px;
+ }
+
+ .main h1:nth-child(2) {
+     margin-top: 60px;
+     color: brown;
+ }
+
+ #left-img {
+     height: 300px;
+     position: absolute;
+     left: 3%;
+     top: 14%;
+     border-radius: 20px;
+     overflow: hidden;
+     transform: rotate(-20deg);
+     z-index: 0;
+ }
+
+ #right-img {
+     height: 300px;
+     position: absolute;
+     right: 3%;
+     bottom: 5%;
+     border-radius: 20px;
+     overflow: hidden;
+     transform: rotate(20deg);
+     z-index: 0;
+ }
+ h5{
+    position: absolute;
+    bottom: 4%;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    transition: all ease-in-out;
+ }
